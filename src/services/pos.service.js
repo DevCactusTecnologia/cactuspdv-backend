@@ -107,7 +107,7 @@ exports.createOrderDB = async (tenantId, cartItems, deliveryType, customerType, 
           qtyUsed,
           previousQty,
           newQty,
-          invoiceId ? `Auto deduction for recipe usage in invoice #${invoiceId}` : 'Auto deduction for recipe usage in order',
+          invoiceId ? `Saída automática de produto - Fatura #${invoiceId}` : 'Saída automática de produto no pedido',
           username
         ]);
 
