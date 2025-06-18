@@ -39,7 +39,7 @@ exports.addInventoryItemDB = async (
     await conn.query(
       `INSERT INTO inventory_logs
       (tenant_id, inventory_item_id, type, quantity_change, previous_quantity, new_quantity, note, created_by)
-      VALUES (?, ?, 'IN', ?, 0, ?, 'Initial stock', ?)`,
+      VALUES (?, ?, 'IN', ?, 0, ?, 'Estoque inicial', ?)`,
       [tenantId, inventoryItemId, quantity, quantity, username]
     );
 
