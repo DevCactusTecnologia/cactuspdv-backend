@@ -24,5 +24,6 @@ exports.LANGUAGES = [
     'fr',
     'hi',
     'ja',
+    'pt',
     'ko'
 ]
