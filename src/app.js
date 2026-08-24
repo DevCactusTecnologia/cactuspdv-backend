@@ -30,6 +30,7 @@ const qrMenuRoutes = require("./routes/qrmenu.routes")
 const feedbackRoutes = require("./routes/feedback.routes")
 const superAdminRoutes = require("./routes/superadmin.routes")
 const inventoryRoutes = require("./routes/inventory.routes");
+const barcodeRoutes = require("./routes/barcode.routes");
 // routes import
 
 
@@ -114,6 +115,7 @@ app.use("/api/v1/qrmenu", qrMenuRoutes);
 app.use("/api/v1/feedback", feedbackRoutes);
 app.use("/api/v1/superadmin", superAdminRoutes);
 app.use("/api/v1/inventory", inventoryRoutes);
+app.use("/api/v1/barcodes", barcodeRoutes);
 // routes
 
 app.get("/", (req, res)=>{
